@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="email_list.css">
+	<nav>
+		<a href="../GDWebDev2Home.html">Home</a>
+	</nav>
+</head>
+<body>
+	<main>
+	<h1>Book O Roma: Inventory</h1>
+	<!--<script>
+		function buttonclick(){
+			const price1= 4.99;
+			const price2= 1.99;
+			const price3= 3.45;
+		// get number of first magazine
+		//let magazine1 = parseFloat(prompt("How many of the Spider-Man Comics?" + "(each cost " + price1 +")"));
+		//let magazine2 = parseFloat(prompt("How many of the Fantastic Four Comics?" + "(each cost " + price2 +")"));
+		//let magazine3 = parseFloat(prompt("How many of the Batman Comics?" + "(each cost " + price3 +")"));
+		if (magazine1 > 0 && magazine2 > 0 && magazine3 > 0){
+			magazine1 = magazine1.toFixed(2)
+			magazine2 = magazine2.toFixed(2)
+			magazine3 = magazine3.toFixed(2)
+
+			// calculate total price
+			const total = ((price1*magazine1)+(price2*magazine2)+(price3*magazine3)).toFixed(2);
+			// display results
+			const alertTotal = 	"Price of Comic 1 = $" + (price1*magazine1).toFixed(2) + "\n" +
+								"Price of Comic 2 = $" + (price2*magazine2).toFixed(2) + "\n" +
+								"Price of Comic 3 = $" + (price3*magazine3).toFixed(2) + "\n" +
+								"Total Price = $" + total + "";
+			alert(alertTotal);
+	}
+		else{
+			alert("One or more of these entreies are invalid")
+
+		
+				}
+			}
+	</script>
+
+	<div><button id="selfclick" onclick="buttonclick()">How much money are you spending? </button> <br> <br>   
+</div>-->
+	<div>
+		<img src="spiderman1.jpg"><br>
+		<p> Price is $4.99</p><br>
+		<label for="mag1">Number Buying:</label>
+        <input type="text" id="mag1">
+
+	</div>
+	<div>
+		<img src="fantasticfour.jpg">
+		<br>
+		<p> Price is $1.99</p><br>
+		<label for="mag2">Number Buying:</label>
+        <input type="text" id="mag2">
+	</div>
+	<div>
+		<img src="batman1.jpg"><br>
+		<p> Price is $3.45	</p><br>
+		<label for="mag3">Number Buying:</label>
+        <input type="text" id="mag3">
+	</div>
+	<label for="Total">Total Price:</label>
+    <input type="text" id="total" disabled>
+	<label>&nbsp;</label>
+    <input type="button" id="calculate" value="Calculate Total Price">
+	<label>&nbsp;</label>
+    <input type="button" id="clear" value="Clear Entries">
+	</main>
+	<script src="price.js"></script>
+</body>
+</html>
+	
