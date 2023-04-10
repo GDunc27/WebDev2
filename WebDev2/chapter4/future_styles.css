@@ -5,3 +5,7 @@
 	width: 200px;
 	height: 300px;}
  
+.messages {border: 3px solid red;
+color:red;
+padding:2em;
+margin-bottom: 2em;}
