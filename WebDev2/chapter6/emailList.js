@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         if (isValid==true){
-            $("email_form").submit();
+            $("form").submit();
         }
 
     });
