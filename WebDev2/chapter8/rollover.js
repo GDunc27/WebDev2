@@ -1,5 +1,5 @@
 "use strict";
-$(document).ready(() => {
+//$(document).ready(() => {
 
     // process each img tag
     $("#image_rollovers img").each( (index, img) => {
@@ -10,11 +10,14 @@ $(document).ready(() => {
         const rolloverImage = new Image();
         rolloverImage.src = newURL;
 
+        $(img).mouseover( () => img.src = newURL );
+        $(img).mouseout( () => img.src = oldURL);
+
         // set up event handlers for hovering over an image
-        $(img).hover(   // use jQuery syntax to access hover() method
-            () => img.src = newURL,  // hover over
-            () => img.src = oldURL   // hover out
-        ); 
+       // $(img).hover(   // use jQuery syntax to access hover() method
+       //     () => img.src = newURL,  // hover over
+        //    () => img.src = oldURL   // hover out
+        //); 
     });
     
-});
+//});

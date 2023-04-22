@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="email_list.css">
+	<link rel="stylesheet" type="text/css" href="../chapter8/rollover.css">
 	<nav>
 		<a href="../GDWebDev2Home.html">Home</a>
 	</nav>
@@ -43,6 +43,43 @@
 
 	<div><button id="selfclick" onclick="buttonclick()">How much money are you spending? </button> <br> <br>   
 </div>-->
+
+
+<ul id="image_rollovers">
+	<li><img src="spiderman1.jpg" alt="" id="spiderman2.jpg"></li>
+	<p> Price is $4.99</p>
+	<label for="mag1">Number Buying:</label>
+	<input type="text" id="mag1">
+	<br>
+	<li><img src="fantasticfour.jpg" alt="" id="fantasticfour2.jpg"></li>
+	<p> Price is $1.99</p><br>
+		<label for="mag2">Number Buying:</label>
+        <input type="text" id="mag2">
+	<br>
+	<li><img src="batman1.jpg" alt="" id="batman2.jpeg"></li>
+	<p> Price is $3.45	</p><br>
+		<label for="mag3">Number Buying:</label>
+        <input type="text" id="mag3">
+</ul>
+<br>
+<label for="Total">Total Price:</label>
+    <input type="text" id="total" disabled>
+	<label>&nbsp;</label>
+    <input type="button" id="calculate" value="Calculate Total Price">
+	<label>&nbsp;</label>
+    <input type="button" id="clear" value="Clear Entries">
+<!-- Previous testing
+<ul id="image_rollovers">
+            <li><img src="spiderman1.jpg" alt="" id="../images/deer.jpg"></li>
+			<p> Price is $4.99</p><br>
+				<label for="mag1">Number Buying:</label>
+       			<input type="text" id="mag1">
+            <li><img src="fantasticfour.jpg" alt="" id="../images/bison.jpg">
+				<p> Price is $1.99</p><br>
+				<label for="mag2">Number Buying:</label>
+				<input type="text" id="mag2">
+			</li>
+        </ul>
 	<div>
 		<img src="spiderman1.jpg"><br>
 		<p> Price is $4.99</p><br>
@@ -69,8 +106,24 @@
     <input type="button" id="calculate" value="Calculate Total Price">
 	<label>&nbsp;</label>
     <input type="button" id="clear" value="Clear Entries">
-	</main>
+	
+
+-->
+
+</main>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="../chapter8/rollover.js"></script>
 	<script src="price.js"></script>
+	
+
+
+
+
+
 </body>
 </html>
 	
