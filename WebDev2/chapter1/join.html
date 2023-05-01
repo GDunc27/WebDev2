@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<!--<head>
 	<meta charset="UTF-8">
     <Title>Thanks for joining</Title>
     <link rel="stylesheet" href="email_list.css">
@@ -8,7 +8,43 @@
 
 <body>
     <main>
-            <h1> Thanks for joining our email list!</h1>
+            <h1> Thanks for joining our email list!</h1><br>
+            <h1> Look at these cool Magazines</h1><br>
+            <ul id="slider">
+                <li><img src="batman1.jpg" alt="" title="Batman"></li>
+                <li><img src="spiderman1.jpg" alt="" title="Batman"></li>
+            </ul>
         </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="boxslider.js"></script>   
 </body>
+</html>
+-->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <Title>Thanks for joining</Title>
+    <link rel="stylesheet" href="email_list.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(".slider").bxSlider();
+      });
+    </script>
+
+  </head>
+  <body>
+    <h1> Thanks for joining our email list!</h1><br>
+    <h1> Look at these cool Magazines</h1><br>
+
+    <div class="slider">
+      <div><img src="batman1.jpg" alt="" title="Batman"></div>
+      <div><img src="spiderman1.jpg" alt="" title="Spider-Man"></div>
+    </div>
+
+  </body>
 </html>
